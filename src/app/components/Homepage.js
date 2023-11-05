@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import SupportIcon from '../../../public/images/icons/SupportIcon.png';
+
 const HomePage = () => {
   return (
     <div className=''>
@@ -24,7 +26,7 @@ const HomePage = () => {
               >
                 <path
                   fillRule='evenodd'
-                  clip-rule='evenodd'
+                  clipRule='evenodd'
                   d='M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z'
                   fill='currentColor'
                 />
@@ -109,8 +111,8 @@ const HomePage = () => {
             <Image
               src='/images/logo.png'
               alt='Royal Ridges Logo'
-              height={300}
-              width={600}
+              height={100}
+              width={1000}
               className='w-1/2'
             />
           </div>
@@ -122,8 +124,8 @@ const HomePage = () => {
             <Image
               src='/images/D_C_G_Logo.png'
               alt='Summer'
-              height={750}
-              width={1000}
+              height={550}
+              width={700}
             />
           </div>
           <div className='flex justify-center'>
@@ -171,7 +173,7 @@ const HomePage = () => {
           {/* Row One */}
           <div className='grid col-span-3 grid-cols-3 md:col-span-1'>
             <div className='flex flex-col items-center justify-center'>
-              <Link to='/summer-camp'>
+              <Link href='/summer-camp'>
                 <div className='flex justify-center content-center box-content h-full'>
                   <Image
                     src='/images/icons/SummerIcon.png'
@@ -189,7 +191,7 @@ const HomePage = () => {
               <Link href='/programs'>
                 <div className='flex justify-center content-center box-content h-full'>
                   <Image
-                    src='../images/icons/ProgramIcon.png'
+                    src='/images/icons/ProgramIcon.png'
                     alt='Programs'
                     height={400}
                     className='w-full md:w-1/2 pr-2'
@@ -207,7 +209,7 @@ const HomePage = () => {
               <Link href='/about'>
                 <div className='flex justify-center content-center box-content h-full'>
                   <Image
-                    src='../images/icons/AboutIcon.png'
+                    src='/images/icons/AboutIcon.png'
                     alt='About'
                     height={400}
                     width={400}
@@ -225,7 +227,7 @@ const HomePage = () => {
               <Link href='/support'>
                 <div className='flex justify-center content-center box-content h-full'>
                   <Image
-                    src='../images/icons/SupportIcon.png'
+                    src='/images/icons/SupportIcon.png'
                     alt='Support'
                     height={400}
                     width={400}
