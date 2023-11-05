@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import SupportIcon from '../../../public/images/icons/SupportIcon.png';
+import Navigation from './Navigation';
 
 const HomePage = () => {
   return (
@@ -107,20 +107,35 @@ const HomePage = () => {
               />
             </svg>
           </div>
-          <div className='flex justify-center content-center box-content h-full'>
+          <div className='flex justify-center my-auto box-content'>
             <Image
               src='/images/logo.png'
               alt='Royal Ridges Logo'
-              height={100}
-              width={1000}
-              className='w-1/2'
+              width={700}
+              height={200}
             />
           </div>
         </div>
         {/* Second window */}
         <div className='flex flex-col h-screen bg-gradient-to-r from-yellow-500 to-yellow-200'>
-          {/* <Navigation /> */}
-          <div className='flex justify-center h-2/3 mb-auto px-1'>
+        <div className='flex justify-center'>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              className='h-6 w-6 animate-bounce text-gray-600'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M19 14l-7 7m0 0l-7-7m7 7V3'
+              />
+            </svg>
+          </div>
+          <Navigation />
+          <div className='flex justify-center my-auto px-1'>
             <Image
               src='/images/D_C_G_Logo.png'
               alt='Summer'
@@ -128,29 +143,10 @@ const HomePage = () => {
               width={700}
             />
           </div>
-          <div className='flex justify-center'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='h-6 w-6 animate-bounce text-gray-600'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M19 14l-7 7m0 0l-7-7m7 7V3'
-              />
-            </svg>
-          </div>
         </div>
         {/* Third window */}
         <div className='flex flex-col justify-between heropattern-rain-gray-100'>
-          <div className='flex justify-center h-2/3'>
-            {/* <Blog /> Blog post list */}
-          </div>
-          <div className='flex justify-center'>
+        <div className='flex justify-center'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-6 w-6 animate-bounce text-gray-600'
@@ -166,8 +162,14 @@ const HomePage = () => {
               />
             </svg>
           </div>
+          <div className='flex justify-center h-2/3'>
+            {/* <Blog /> Blog post list */}
+            <div>
+              <p>This is currently an empty window because I need to figure out how to get the Wordpress blog to show up here</p>
+            </div>
+          </div>
+          
         </div>
-
         {/* Fourth window */}
         <div className='h-screen grid grid-rows-3 grid-flow-col gap-4 bg-gradient-radial from-yellow-200 to-yellow-500'>
           {/* Row One */}

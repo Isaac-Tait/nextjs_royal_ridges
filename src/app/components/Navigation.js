@@ -1,3 +1,4 @@
+"use client"
 import { Disclosure } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
 
