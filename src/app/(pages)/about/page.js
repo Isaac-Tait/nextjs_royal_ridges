@@ -1,13 +1,15 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 
-// import Header from '../components/header';
-// import Footer from '../components/footer';
+import Header from '../../(components)/Header';
+import Footer from '../../(components)/Footer';
 
 export default function About() {
   return (
     <div className='bg-gradient-to-l from-yellow-200 to-green-200'>
-      {/* <Header /> */}
+      <Header />
       <div className='max-w-6xl mx-auto'>
         <div className='flex justify-center'>
           <Image
@@ -72,7 +74,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
