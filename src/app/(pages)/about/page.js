@@ -1,12 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Mission from '/images/icons/MissionIcon.png';
-import Faith from '/images/icons/FaithIcon.png';
-import Staff from '/images/icons/StaffIcon.png';
-import Newsletter from '/images/icons/NewsletterIcon.png';
-import AboutIcon from '/images/icons/AboutIcon.png';
-
 // import Header from '../components/header';
 // import Footer from '../components/footer';
 
@@ -17,9 +11,11 @@ export default function About() {
       <div className='max-w-6xl mx-auto'>
         <div className='flex justify-center'>
           <Image
+            src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283059/royalRidges/icons/AboutIcon_pomsgv.png'
             alt='about'
-            src={AboutIcon}
-            className='w-1/12 mt-1'
+            width={100}
+            height={100}
+            className='w-40 md:w-64 mt-8 mx-auto'
           />
         </div>
 
@@ -28,8 +24,10 @@ export default function About() {
           <div className='flex items-center justify-center'>
             <Link href={'/mission'}>
               <Image
+                src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283060/royalRidges/icons/MissionIcon_mo7qzk.png'
                 alt='mission'
-                src={Mission}
+                width={100}
+                height={100}
                 className='w-40 md:w-64 mt-8 mx-auto'
               />
             </Link>
@@ -42,8 +40,10 @@ export default function About() {
               rel='noopener noreferrer'
             >
               <Image
+                src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283060/royalRidges/icons/NewsletterIcon_sz4zqb.png'
                 alt='newsletter'
-                src={Newsletter}
+                width={100}
+                height={100}
                 className='w-40 md:w-64 mt-8 mx-auto'
               />
             </a>
@@ -51,8 +51,10 @@ export default function About() {
           <div className='flex items-center justify-center'>
             <Link href={'/staff'}>
               <Image
+                src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283063/royalRidges/icons/StaffIcon_vbe284.png'
                 alt='staff'
-                src={Staff}
+                width={100}
+                height={100}
                 className='w-40 md:w-64 mt-8 mx-auto'
               />
             </Link>
@@ -60,8 +62,10 @@ export default function About() {
           <div className='flex items-center justify-center'>
             <Link href={'/statement-of-faith'}>
               <Image
+                src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283060/royalRidges/icons/FaithIcon_vyjdtj.png'
                 alt='faith'
-                src={Faith}
+                width={100}
+                height={100}
                 className='w-40 md:w-64 mt-8 mx-auhref'
               />
             </Link>
