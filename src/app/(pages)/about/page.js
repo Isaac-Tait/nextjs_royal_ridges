@@ -15,9 +15,9 @@ export default function About() {
           <Image
             src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283059/royalRidges/icons/AboutIcon_pomsgv.png'
             alt='about'
-            width={100}
-            height={100}
-            className='w-40 md:w-64 mt-8 mx-auto'
+            width={200}
+            height={200}
+            className='w-1/12 mt-1'
           />
         </div>
 
@@ -28,13 +28,12 @@ export default function About() {
               <Image
                 src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283060/royalRidges/icons/MissionIcon_mo7qzk.png'
                 alt='mission'
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className='w-40 md:w-64 mt-8 mx-auto'
               />
             </Link>
           </div>
-          {/* Trigger Netlify build */}
           <div className='flex items-center justify-center'>
             <a
               href='https://hardcore-khorana-19151f.netlify.app'
@@ -44,8 +43,8 @@ export default function About() {
               <Image
                 src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283060/royalRidges/icons/NewsletterIcon_sz4zqb.png'
                 alt='newsletter'
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className='w-40 md:w-64 mt-8 mx-auto'
               />
             </a>
@@ -55,8 +54,8 @@ export default function About() {
               <Image
                 src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283063/royalRidges/icons/StaffIcon_vbe284.png'
                 alt='staff'
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className='w-40 md:w-64 mt-8 mx-auto'
               />
             </Link>
@@ -66,8 +65,8 @@ export default function About() {
               <Image
                 src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283060/royalRidges/icons/FaithIcon_vyjdtj.png'
                 alt='faith'
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className='w-40 md:w-64 mt-8 mx-auhref'
               />
             </Link>

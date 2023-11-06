@@ -118,7 +118,7 @@ const HomePage = () => {
         </div>
         {/* Second window */}
         <div className='flex flex-col h-screen bg-gradient-to-r from-yellow-500 to-yellow-200'>
-        <div className='flex justify-center'>
+          <div className='flex justify-center'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-6 w-6 animate-bounce text-gray-600'
@@ -146,7 +146,7 @@ const HomePage = () => {
         </div>
         {/* Third window */}
         <div className='flex flex-col justify-between heropattern-rain-gray-100'>
-        <div className='flex justify-center'>
+          <div className='flex justify-center'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-6 w-6 animate-bounce text-gray-600'
@@ -165,10 +165,13 @@ const HomePage = () => {
           <div className='flex justify-center h-2/3'>
             {/* <Blog /> Blog post list */}
             <div>
-              <p>This is currently an empty window because I need to figure out how to get the Wordpress blog to show up here</p>
+              <p>
+                This is currently an empty window because I need to
+                figure out how to get the Wordpress blog to show up
+                here
+              </p>
             </div>
           </div>
-          
         </div>
         {/* Fourth window */}
         <div className='h-screen grid grid-rows-3 grid-flow-col gap-4 bg-gradient-radial from-yellow-200 to-yellow-500'>
@@ -178,11 +181,11 @@ const HomePage = () => {
               <Link href='/summer-camp'>
                 <div className='flex justify-center content-center box-content h-full'>
                   <Image
-                    src='/images/icons/SummerIcon.png'
+                    src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283063/royalRidges/icons/SummerIcon_wa521t.png'
                     alt='Summer'
-                    height={400}
+                    height={200}
+                    width={200}
                     className='w-full md:w-1/2 pl-2'
-                    width={400}
                   />
                 </div>
               </Link>
@@ -193,11 +196,11 @@ const HomePage = () => {
               <Link href='/programs'>
                 <div className='flex justify-center content-center box-content h-full'>
                   <Image
-                    src='/images/icons/ProgramIcon.png'
+                    src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283061/royalRidges/icons/ProgramIcon_ocgaad.png'
                     alt='Programs'
-                    height={400}
+                    height={200}
+                    width={200}
                     className='w-full md:w-1/2 pr-2'
-                    width={400}
                   />
                 </div>
               </Link>
@@ -211,10 +214,10 @@ const HomePage = () => {
               <Link href='/about'>
                 <div className='flex justify-center content-center box-content h-full'>
                   <Image
-                    src='/images/icons/AboutIcon.png'
+                    src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283059/royalRidges/icons/AboutIcon_pomsgv.png'
                     alt='About'
-                    height={400}
-                    width={400}
+                    height={200}
+                    width={200}
                     className='w-full md:w-1/2'
                   />
                 </div>
@@ -229,10 +232,10 @@ const HomePage = () => {
               <Link href='/support'>
                 <div className='flex justify-center content-center box-content h-full'>
                   <Image
-                    src='/images/icons/SupportIcon.png'
+                    src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283063/royalRidges/icons/SupportIcon_anp6bi.png'
                     alt='Support'
-                    height={400}
-                    width={400}
+                    height={200}
+                    width={200}
                     className='w-full md:w-1/2'
                   />
                 </div>
@@ -244,10 +247,10 @@ const HomePage = () => {
               <Link href='/contact'>
                 <div className='flex justify-center content-center box-content h-full'>
                   <Image
-                    src='/images/icons/ContactIcon.png'
+                    src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1699283059/royalRidges/icons/ContactIcon_obpqt4.png'
                     alt='Contact'
-                    height={400}
-                    width={400}
+                    height={200}
+                    width={200}
                     className='w-full md:w-1/2'
                   />
                 </div>
