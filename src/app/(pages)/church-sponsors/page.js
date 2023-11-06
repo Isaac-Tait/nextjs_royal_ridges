@@ -18,9 +18,10 @@ const ChurchSponsors = () => {
             className='rounded-2xl shadow-xl mt-2 w-2/3 m-auto'
           />
           <p className='text-center mt-4'>
-            We are proud to call the following churches "Friends of
-            Royal Ridges." Without their generous support, this
-            ministry would not be able to thrive!
+            We are proud to call the following churches{' '}
+            <span className='italic'>Friends of Royal Ridges</span>.
+            Without their generous support, this ministry would not be
+            able to thrive!
           </p>
           <ul className='flex flex-col items-center'>
             <li className='mt-4'>
