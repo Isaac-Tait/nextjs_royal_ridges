@@ -7,13 +7,13 @@ import Staff from '/images/icons/StaffIcon.png';
 import Newsletter from '/images/icons/NewsletterIcon.png';
 import AboutIcon from '/images/icons/AboutIcon.png';
 
-import Header from '../components/header';
-import Footer from '../components/footer';
+// import Header from '../components/header';
+// import Footer from '../components/footer';
 
-const About = () => {
+export default function About() {
   return (
     <div className='bg-gradient-to-l from-yellow-200 to-green-200'>
-      <Header />
+      {/* <Header /> */}
       <div className='max-w-6xl mx-auto'>
         <div className='flex justify-center'>
           <Image
@@ -26,7 +26,7 @@ const About = () => {
         {/* Icons */}
         <div className='grid grid-cols-2 gap-2 mx-2 h-screen'>
           <div className='flex items-center justify-center'>
-            <Link to={'/mission'}>
+            <Link href={'/mission'}>
               <Image
                 alt='mission'
                 src={Mission}
@@ -49,7 +49,7 @@ const About = () => {
             </a>
           </div>
           <div className='flex items-center justify-center'>
-            <Link to={'/staff'}>
+            <Link href={'/staff'}>
               <Image
                 alt='staff'
                 src={Staff}
@@ -58,19 +58,17 @@ const About = () => {
             </Link>
           </div>
           <div className='flex items-center justify-center'>
-            <Link to={'/statement-of-faith'}>
+            <Link href={'/statement-of-faith'}>
               <Image
                 alt='faith'
                 src={Faith}
-                className='w-40 md:w-64 mt-8 mx-auto'
+                className='w-40 md:w-64 mt-8 mx-auhref'
               />
             </Link>
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
-};
-
-export default About;
+}
