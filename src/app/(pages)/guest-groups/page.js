@@ -28,9 +28,10 @@ const GuestGroups = () => {
             easy accessibility, but far enough for peace and quiet.
             Our retreat packages are perfect for small groups,
             including churches, schools, youth groups, Girl & Boy
-            Scouts, women's and men's ministry groups, families, and
-            more. Our facilities are ideal for a single-day event,
-            overnight, weekend, or week-long getaways.
+            Scouts, women&#39;s and men&#39;s ministry groups,
+            families, and more. Our facilities are ideal for a
+            single-day event, overnight, weekend, or week-long
+            getaways.
           </p>
           <div className='flex flex-row justify-center'>
             <iframe
