@@ -4,24 +4,17 @@ import Link from 'next/link';
 import Header from '../../(components)/Header';
 import Footer from '../../(components)/Footer';
 
-const FatherSon = () => {
+const MotherDaughter = () => {
   return (
     <div className='bg-gradient-to-r from-yellow-200 to-indigo-200'>
       <Header />
       <div className='h-screen'>
         <p className='flex flex-wrap text-green-200 font-bold font-cursive text-xl justify-center md:text-4xl pb-4'>
-          Father Son
+          Mother Daughter
         </p>
         <div className='max-w-6xl h-1/2 mx-auto grid grid-cols-2 gap-4'>
           {/*Column One (Left)*/}
           <div className='flex flex-col justify-between mt-2'>
-            <div className='mx-auto'>
-              <Link href={'/mother-daughter'}>
-                <p className='text-green-200 hover:text-indigo-400 font-bold text-lg justify-center md:text-2xl'>
-                  Mother Daughter
-                </p>
-              </Link>
-            </div>
             <div className='mx-auto'>
               <Link href={'/mother-son'}>
                 <p className='text-green-200 hover:text-indigo-400 font-bold text-lg justify-center md:text-2xl'>
@@ -36,12 +29,23 @@ const FatherSon = () => {
                 </p>
               </Link>
             </div>
+            <div className='mx-auto'>
+              <Link href={'/father-son'}>
+                <p className='text-green-200 hover:text-indigo-400 font-bold text-lg justify-center md:text-2xl'>
+                  Father Son
+                </p>
+              </Link>
+            </div>
           </div>
           {/*Column Two (Right)*/}
           <div className='mt-2'>
             <p>
-              A full day jam-packed with adventurous activities
-              intended to bring fathers and sons closer together.
+              This special day is for mothers and daughters who are
+              looking to make some unforgettable memories while
+              building a better relationship with each other. You will
+              create a craft, ride a horse on a trail or in the arena,
+              spend time in Biblical Fellowship, and invest in quality
+              time together.
             </p>
             <p>
               For more information please see our{' '}
@@ -61,4 +65,4 @@ const FatherSon = () => {
   );
 };
 
-export default FatherSon;
+export default MotherDaughter;
