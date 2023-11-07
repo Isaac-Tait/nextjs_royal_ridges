@@ -46,7 +46,7 @@ const GiddyUp = () => {
             program and Wednesday Horsemanship Lessons.
           </p>
 
-          <div className='mt-6 mb-4'>
+          <div className='w-2/3 my-6 text-lg mx-auto'>
             <a
               href='https://www.ultracamp.com/clientlogin.aspx?idCamp=1145&campCode=151'
               target='_blank'
