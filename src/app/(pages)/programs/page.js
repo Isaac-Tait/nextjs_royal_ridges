@@ -29,7 +29,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-400 rounded-full'>
+              <div className='text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-400'>
                 <p className='text-white px-1 hidden lg:block'>
                   During the non-summer seasons come on up for a day
                   of fun and fellowship every week
@@ -46,7 +46,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-200 rounded-full'>
+              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-200'>
                 <p className='px-1 hidden lg:block'>
                   This series offers more than just learning how to
                   ride a horse - you learn to care for them too.
@@ -79,7 +79,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-green-200 rounded-full'>
+              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-green-200'>
                 <p className='px-1 text-white hidden lg:block'>
                   We have helped hundreds of Girl Scouts get their
                   horsemanship badges. Let us help your troop succeed
@@ -97,7 +97,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-400 rounded-full'>
+              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-400'>
                 <p className='text-white px-1 hidden lg:block'>
                   A day of fun, adventures, and memories that will
                   last a life time.
@@ -115,7 +115,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-200 rounded-full'>
+              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-200'>
                 <p className='px-1 hidden lg:block'>
                   Are you looking for something for your kids to do
                   over the weekend? Look no further than this popular
@@ -133,7 +133,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-green-200 rounded-full'>
+              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-green-200'>
                 <p className='px-2 text-white hidden lg:block'>
                   Need something for junior to do during school break?
                   Send them to Royal Ridges Retreat. We promise to
@@ -151,7 +151,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-400 rounded-full'>
+              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-400'>
                 <p className='px-1 text-white hidden lg:block'>
                   Vaulting does not have to be scary. Let our fully
                   certified instructors show you the ropes in a fun
@@ -169,7 +169,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-200 rounded-full'>
+              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-200'>
                 <p className='px-1 hidden lg:block'>
                   We have the best paintball course in southern
                   Washington. Come and experience it for yourself.
@@ -189,7 +189,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-green-200 rounded-full'>
+              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-green-200'>
                 <p className='px-1 text-white hidden lg:block'>
                   Looking for a retreat location? Let Royal Ridges
                   Retreat meet and exceed your needs.
@@ -206,7 +206,7 @@ const ProgramsPage = () => {
                 width={200}
                 height={200}
               />
-              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-400 rounded-full'>
+              <div className='-mb-2 text-center absolute inset-0 opacity-0 hover:opacity-100 duration-300 flex justify-center items-center text-md text-gray-800 bg-yellow-400'>
                 <p className='text-white px-1 hidden lg:block'>
                   A perfect gift for that special someone - great for
                   birthdays, graduation gifts, or just because...
