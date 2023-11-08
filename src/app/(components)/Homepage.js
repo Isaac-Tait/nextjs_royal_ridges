@@ -111,6 +111,7 @@ const HomePage = () => {
             <Image
               src='/images/logo.png'
               alt='Royal Ridges Logo'
+              loading='eager'
               width={700}
               height={200}
             />
