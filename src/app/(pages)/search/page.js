@@ -7,7 +7,7 @@ import {
   Hits,
 } from 'react-instantsearch-dom';
 
-import SearchPreview from '../../(components)/Search-preview';
+import SearchPreview from '../../(components)/SearchPreview';
 import Header from '../../(components)/Header';
 import Footer from '../../(components)/Footer';
 
