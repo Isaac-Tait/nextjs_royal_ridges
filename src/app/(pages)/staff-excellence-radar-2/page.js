@@ -181,7 +181,7 @@ const SummerStaffOne = () => {
         </p>
         <div className='text-center mt-4 flex flex-col'>
           <Link
-            to='/staff-excellence-radar-3'
+            href='/staff-excellence-radar-3'
             className='text-medium lg:text-2xl my-6 font-semibold w-full lg:w-1/4 mx-auto text-gray-600 hover:underline hover:text-indigo-600'
           >
             {' '}
