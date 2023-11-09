@@ -1,11 +1,14 @@
-//import Image from 'next/image'
+import { ApolloProvider } from '@apollo/client/react';
+import { client } from '../lib/apollo';
 
 import HomePage from './(components)/Homepage';
 
 export default function Home() {
   return (
-    <div>
-      <HomePage />
-    </div>
+    <ApolloProvider>
+      <div>
+        <HomePage />
+      </div>
+    </ApolloProvider>
   );
 }
