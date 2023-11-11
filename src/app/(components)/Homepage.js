@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import Blog from './BlogPostList';
 import Navigation from './Navigation';
 
 const HomePage = () => {
@@ -164,7 +165,7 @@ const HomePage = () => {
             </svg>
           </div>
           <div className='flex justify-center h-2/3'>
-            {/* <Blog /> Blog post list */}
+            <Blog />
             <div>
               <p>
                 This is currently an empty window because I need to
