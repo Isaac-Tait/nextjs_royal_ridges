@@ -1,5 +1,5 @@
 'use client';
-import { getAllPosts } from '../(lib)/api';
+import { getAllPosts } from '../lib/api';
 
 const Wordpress = ({ allPosts }) => {
   // Check if allPosts and edges are defined before accessing their properties
