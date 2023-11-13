@@ -1,8 +1,9 @@
+'use client';
 const API_URL = process.env.WORDPRESS_API_URL;
 
 async function fetchAPI(query = '', { variables } = {}) {
   const headers = { 'Content-Type': 'application/json' };
-  
+
   // WPGraphQL Plugin must be enabled
   const res = await fetch(API_URL, {
     headers,
@@ -22,7 +23,7 @@ async function fetchAPI(query = '', { variables } = {}) {
 }
 
 // Get the first 20 posts from WordPress, ordered by the date
-export async function getAllPostsFromWordPress(preview) {
+export async function getAllPosts(preview) {
   const data = await fetchAPI(`
       query AllPosts {
         posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
@@ -38,5 +39,22 @@ export async function getAllPostsFromWordPress(preview) {
       }
     `);
 
-  return data.posts;
+  return data?.posts;
+}
+
+export async function getAllPostsWithSlug() {
+  const data = await fetchAPI(
+    `
+    {
+      posts(first: 10000) {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
+    }
+  `
+  );
+  return data?.posts;
 }

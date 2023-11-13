@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
 
 import Blog from './(components)/Wordpress';
 import Navigation from './(components)/Navigation';
@@ -8,6 +9,12 @@ import Navigation from './(components)/Navigation';
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>
+          Royal Ridges - An Adventure Camp in Southern Washington
+        </title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       {/* Sticky Header */}
       <div className='sticky top-0'>
         <div className='flex flex-wrap justify-between mt-1'>
