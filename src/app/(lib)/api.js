@@ -1,43 +1,50 @@
 'use client';
 const API_URL = process.env.WORDPRESS_API_URL;
 
-async function fetchAPI(query = '', { variables } = {}) {
+async function fetchAPI(query, { variables } = {}) {
+  // Set up some headers to tell the fetch call
+  // that this is an application/json type
   const headers = { 'Content-Type': 'application/json' };
 
-  // WPGraphQL Plugin must be enabled
+  // build out the fetch() call using the API_URL
+  // environment variable pulled in at the start
+  // Note the merging of the query and variables
   const res = await fetch(API_URL, {
-    headers,
     method: 'POST',
-    body: JSON.stringify({
-      query,
-      variables,
-    }),
+    headers,
+    body: JSON.stringify({ query, variables }),
   });
 
+  // error handling work
   const json = await res.json();
   if (json.errors) {
-    console.error(json.errors);
+    console.log(json.errors);
+    console.log('error details', query, variables);
     throw new Error('Failed to fetch API');
   }
   return json.data;
 }
 
-// Get the first 20 posts from WordPress, ordered by the date
+// Notice the 'export' keyword here. We'll be calling this function
+// directly in our blog/index.js page, so it needs to be exported
 export async function getAllPosts(preview) {
-  const data = await fetchAPI(`
-      query AllPosts {
-        posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
-          edges {
-            node {
-              title
-              excerpt
-              slug
-              date
-            }
+  const data = await fetchAPI(
+    `
+    query AllPosts {
+      posts(first: 20, where: {orderby: {field: DATE, order: DESC}}) {
+        edges {
+          node {
+            date
+            id
+            slug
+            title
+            content
           }
         }
       }
-    `);
+    }
+    `
+  );
 
   return data?.posts;
 }
@@ -57,4 +64,36 @@ export async function getAllPostsWithSlug() {
   `
   );
   return data?.posts;
+}
+
+export async function getPost(slug) {
+  const data = await fetchAPI(
+    `
+    fragment PostFields on Post {
+      title
+      excerpt
+      slug
+      date
+      featuredImage {
+        node {
+          sourceUrl
+        }
+      }
+    }
+    query PostBySlug($id: ID!, $idType: PostIdType!) {
+      post(id: $id, idType: $idType) {
+        ...PostFields
+        content
+      }
+    }
+  `,
+    {
+      variables: {
+        id: slug,
+        idType: 'SLUG',
+      },
+    }
+  );
+
+  return data;
 }
