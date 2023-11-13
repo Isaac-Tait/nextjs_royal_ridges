@@ -1,15 +1,29 @@
-'use client';
-import { ApolloProvider } from '@apollo/client/react';
-import { client } from './(lib)/apollo';
+import HomePage from '../components/Homepage'; // Assuming your components are in the components directory
+import { getAllPostsForHome } from '../lib/api'; // Assuming your API functions are in the lib directory
 
-import HomePage from './(components)/Homepage';
+export default function Home({ allPosts: { edges }, preview }) {
+  const heroPost = edges[0]?.node;
 
-export default function Home() {
   return (
-    <ApolloProvider client={client}>
-      <div>
-        <HomePage />
-      </div>
-    </ApolloProvider>
+    <div preview={preview}>
+      <HomePage />
+      <div
+        title={heroPost.title}
+        coverImage={heroPost.featuredImage}
+        date={heroPost.date}
+        author={heroPost.author}
+        slug={heroPost.slug}
+        excerpt={heroPost.excerpt}
+      />
+    </div>
   );
+}
+
+export async function getStaticProps({ preview = false }) {
+  const allPosts = await getAllPostsForHome(preview);
+
+  return {
+    props: { allPosts, preview },
+    revalidate: 10,
+  };
 }
