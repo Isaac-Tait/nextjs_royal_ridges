@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Blog from './BlogPostList';
+import Blog from './Wordpress';
 import Navigation from './Navigation';
 
 const HomePage = () => {
