@@ -7,7 +7,7 @@ import Navigation from './(components)/Navigation';
 
 export default function Home() {
   return (
-    <div className=''>
+    <div>
       {/* Sticky Header */}
       <div className='sticky top-0'>
         <div className='flex flex-wrap justify-between mt-1'>
