@@ -1,18 +1,8 @@
 'use client';
 
-import Header from '../../(components)/Header';
-import Footer from '../../(components)/Footer';
-
-import Blog from '../../(components)/Wordpress';
 const Test = () => {
   return (
-    <div>
-      <Header />
-      <div className='h-96'>
-        <Blog />
-      </div>
-      <Footer />
-    </div>
+    <div className='h-screen heropattern-topography-yellow-400'></div>
   );
 };
 
